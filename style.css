@@ -1,0 +1,159 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(circle, #edd472, #db8d55, #b14e4d, #741b48, #290138);
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* -------------- Search bar start -------------- */
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar-input {
+    width: 50%;
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.input-btn {
+    padding: 8px 20px 8px 17px;
+    border: none;
+    background-color: royalblue;
+    color: #fff;
+    margin-left: -46px;
+    border-radius: 0 50px 50px 0;
+
+}
+
+.input-btn:hover {
+    color: #fff;
+}
+
+.search-icon:hover {
+    transform: scale(1.5);
+    transition: .2s ease;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.search-bar-input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    outline: none;
+}
+
+/* -------------- Search bar End -------------- */
+
+/* ---------------------------- Main Evnet Container start --------------------------- */
+
+.event-container {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.event-container:hover {
+    transform: scale(1.02);
+    transition: .1s linear;
+}
+
+.event-heading {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #003f7d;
+    color: #fff;
+}
+
+.event-heading>h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.img {
+    border-radius: 7px;
+    background-size: cover;
+}
+
+.event-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: 13px;
+}
+
+.desc {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.event-btn {
+    border: none;
+    padding: 5px 12px;
+    border-radius: 7px;
+}
+
+.event-btn:hover {
+    transform: scale(1.05);
+    transition: .2s linear;
+}
+
+.btn-danger {
+    cursor: not-allowed !important;
+}
+
+.count {
+    font-weight: 600;
+}
+
+/* ---------------------------- Main Evnet Container start --------------------------- */
+
+/* --------------------------- Media Queries ------------------------------ */
+
+@media (max-width: 576px) {
+    .small-d-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar-input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .small-d-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar-input {
+        width: 70%;
+    }
+}
